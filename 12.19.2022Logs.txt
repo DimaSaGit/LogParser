@@ -1,0 +1,31 @@
+[12/19/2022 6:51:58 AM] CurrentUser: Dima, Action: ListParameters - Section: , Category: , Page: 1
+[12/19/2022 6:52:02 AM] CurrentUser: Dima, Action: ListParameters - Section: ОВ, Category: , Page: 1
+[12/19/2022 6:52:05 AM] CurrentUser: Dima, Action: ListParameters - Section: ОВ, Category: Схема, Page: 1
+[12/19/2022 6:52:07 AM] CurrentUser: Dima, Action: FamSymbolParameters - Id: 944
+[12/19/2022 6:52:09 AM] CurrentUser: Dima, Action: ListParameters - Section: , Category: , Page: 1
+[12/19/2022 6:52:39 AM] CurrentUser: null, Action: ListParameters - Section: ОВ, Category: , Page: 1
+[12/19/2022 6:52:48 AM] CurrentUser: null, Action: ListParameters - Section: , Category: , Page: 1
+[12/19/2022 6:52:58 AM] CurrentUser: null, Action: ListParameters - Section: АР, Category: , Page: 1
+[12/19/2022 6:53:04 AM] CurrentUser: null, Action: ListParameters - Section: ОВ, Category: Схема, Page: 1
+[12/19/2022 6:54:23 AM] CurrentUser: null, Action: ListParameters - Section: КЖ, Category: , Page: 1
+[12/19/2022 7:04:16 AM] CurrentUser: null, Action: ListParameters - Section: , Category: , Page: 1
+[12/19/2022 7:04:36 AM] CurrentUser: null, Action: ListParameters - Section: АР, Category: , Page: 1
+[12/19/2022 7:05:28 AM] CurrentUser: null, Action: ListParameters - Section: ОВ, Category: Схема, Page: 1
+[12/19/2022 8:36:01 AM] CurrentUser: null, Action: ListParameters - Section: , Category: , Page: 1
+[12/19/2022 8:36:05 AM] CurrentUser: null, Action: ListParameters - Section: , Category: , Page: 16
+[12/19/2022 8:36:07 AM] CurrentUser: null, Action: ListParameters - Section: , Category: , Page: 15
+[12/19/2022 8:36:10 AM] CurrentUser: null, Action: ListParameters - Section: , Category: , Page: 14
+[12/19/2022 8:36:11 AM] CurrentUser: null, Action: ListParameters - Section: АР, Category: , Page: 1
+[12/19/2022 8:36:12 AM] CurrentUser: null, Action: ListParameters - Section: АР, Category: Приямок, Page: 1
+[12/19/2022 8:36:16 AM] CurrentUser: null, Action: ListParameters - Section: , Category: , Page: 1
+[12/19/2022 8:36:23 AM] CurrentUser: null, Action: FamSymbolParameters - Id: 874
+[12/19/2022 8:36:25 AM] CurrentUser: null, Action: GetFileParameters - Page: 1, FileId: 4
+[12/19/2022 8:37:43 AM] CurrentUser: null, Action: ListParameters - Section: Узел, Category: , Page: 1
+[12/19/2022 8:37:47 AM] CurrentUser: null, Action: FamSymbolParameters - Id: 1033
+[12/19/2022 8:37:52 AM] CurrentUser: null, Action: GetFileParameters - Page: 1, FileId: 4
+[12/19/2022 8:38:11 AM] CurrentUser: null, Action: ListParameters - Section: , Category: , Page: 1
+[12/19/2022 8:47:14 AM] CurrentUser: null, Action: ListParameters - Section: КЖ, Category: , Page: 1
+[12/19/2022 8:47:19 AM] CurrentUser: null, Action: ListParameters - Section: КЖ, Category: Гидроизоляция, Page: 1
+[12/19/2022 8:48:52 AM] CurrentUser: null, Action: ListParameters - Section: КЖ, Category: , Page: 1
+[12/19/2022 8:49:09 AM] CurrentUser: null, Action: ListParameters - Section: КЖ, Category: Перекрытие, Page: 1
+[12/19/2022 8:55:44 AM] CurrentUser: null, Action: ListParameters - Section: КЖ, Category: Перекрытие, Page: 1
