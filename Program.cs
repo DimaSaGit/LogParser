@@ -9,6 +9,10 @@ namespace LogParser
     class Program
     {
         static string path = "/Users/dmitrijkovalenko/Downloads/12.19.2022Logs.txt";
+        static Regex regexSections = new Regex(@"\w*Section: \w*");
+        static Regex regexCategory = new Regex(@"\w*Category: \w*");
+        static Regex regexUser = new Regex(@"\w*CurrentUser: \w*");
+        static Regex regexNodesId = new Regex(@"\w*Id: \w*");
 
         static void Main(string[] args)
         {
@@ -23,16 +27,14 @@ namespace LogParser
 
             string[] logs = File.ReadAllLines(enteredPath);
 
-            GetSections(logs);
-            GetCategories(logs);
-            GetUsers(logs);
-            GetNodes(logs);
+            ShowInfo(logs, regexSections, "Sections requests");
+            ShowInfo(logs, regexCategory, "Categories requests");
+            ShowInfo(logs, regexUser, "Users");
+            ShowInfo(logs, regexNodesId, "Nodes requests");
         }
 
-        static private void GetSections(string[] logs)
+        static private void ShowInfo(string[] logs, Regex reg, string showMessage)
         {
-            Regex reg = new Regex(@"\w*Section: \w*");
-            MatchCollection res = null;
             List<string> resList = new List<string>();
 
             foreach (var i in logs)
@@ -40,58 +42,7 @@ namespace LogParser
                 resList.AddRange(reg.Matches(i).Select(x => x.Value));
             }
             var resDict = ClearList(resList);
-            Console.WriteLine("Sections requests");
-            foreach (var i in resDict)
-                Console.WriteLine(String.Format("{0}-{1}", i.Key, i.Value));
-            Console.WriteLine();
-        }
-
-        static private void GetCategories(string[] logs)
-        {
-            Regex reg = new Regex(@"\w*Category: \w*");
-            MatchCollection res = null;
-            List<string> resList = new List<string>();
-
-            foreach (var i in logs)
-            {
-                resList.AddRange(reg.Matches(i).Select(x => x.Value));
-            }
-            var resDict = ClearList(resList);
-            Console.WriteLine("Categories requests");
-            foreach (var i in resDict)
-                Console.WriteLine(String.Format("{0}-{1}", i.Key, i.Value));
-            Console.WriteLine();
-        }
-
-        static private void GetUsers(string[] logs)
-        {
-            Regex reg = new Regex(@"\w*CurrentUser: \w*");
-            MatchCollection res = null;
-            List<string> resList = new List<string>();
-
-            foreach (var i in logs)
-            {
-                resList.AddRange(reg.Matches(i).Select(x => x.Value));
-            }
-            var resDict = ClearList(resList);
-            Console.WriteLine("Users");
-            foreach (var i in resDict)
-                Console.WriteLine(String.Format("{0}-{1}", i.Key, i.Value));
-            Console.WriteLine();
-        }
-
-        static private void GetNodes(string[] logs)
-        {
-            Regex reg = new Regex(@"\w*Id: \w*");
-            MatchCollection res = null;
-            List<string> resList = new List<string>();
-
-            foreach (var i in logs)
-            {
-                resList.AddRange(reg.Matches(i).Select(x => x.Value));
-            }
-            var resDict = ClearList(resList);
-            Console.WriteLine("Nodes requests");
+            Console.WriteLine(showMessage);
             foreach (var i in resDict)
                 Console.WriteLine(String.Format("{0}-{1}", i.Key, i.Value));
             Console.WriteLine();
